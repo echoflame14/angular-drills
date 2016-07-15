@@ -1,16 +1,10 @@
 <html ng-app="app">
 	<body ng-controller="ctrl">
+		<input type="text" name="name" value="" placeholder="find in the list" ng-model="param">
+		<button type="button" name="button" ng-click="filterBy(data,2)"></button>
 		<ul>
-			<li>{{list[0]}}</li>
-			<li>{{list[1]}}</li>
-			<li>{{list[2]}}</li>
-			<li>{{list[3]}}</li>
+			<li>{{data}}</li>
 		</ul>
-
-
-
-
-
 
 
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
