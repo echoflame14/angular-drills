@@ -1,8 +1,9 @@
 <html ng-app="app">
 	<body ng-controller="ctrl">
-		{{pokemonInfo}}
-		<input type="text" name="name" value="" ng-model="searchBox">
-		<input type="button" name="name" value="" ng-click="pokeSearch('pidgey')">
+		<input type="text" name="name" value="" ng-model="text">
+		<br>
+		<br>
+		<h1>{{text}}</h1>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
