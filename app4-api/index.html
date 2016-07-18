@@ -1,7 +1,17 @@
 <html ng-app="apiApp">
+	<head>
+		<link rel="stylesheet" href="master.css" media="screen" title="no title" charset="utf-8">
+	</head>
 	<body ng-controller="ctrl">
-		<input type="text" name="name" value="" ng-model="pokeToFind">
-		<button type="button" name="button" ng-click="contactApi(pokeToFind)">Find The Pokemon</button>
+		<div class="search">
+			<input type="text" name="name" value="" ng-model="pokeToFind">
+			<div class="container">
+
+				<button type="button" name="button" ng-click="contactApi(pokeToFind)">Find The Pokemon</button>
+			</div>
+		</div>
+			<img src="#" alt="" id="pokePic"/>
+			<h1 id="pokeName"></h1>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

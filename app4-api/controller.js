@@ -7,6 +7,8 @@ angular.module("apiApp").controller("ctrl",function($scope,srvc){
 				console.log($scope.pokeName);
 				$scope.pokePic = r.data.sprites.front_shiny;
 				console.log($scope.pokePic);
+				document.getElementById("pokePic").src = $scope.pokePic;
+				document.getElementById("pokeName").innerHTML = $scope.pokeName;
 		});
 	};
 });
